@@ -1,0 +1,91 @@
+Exercice 11.1
+
+variables, nb,i somme en numerique
+msg en caracteres 
+
+Fonction somme (msg en caractère) en numerique
+msg = "entrez un nombre"
+pour i = 1 a 5
+ecrire msg
+Lire nb 
+somme =0
+somme= somme + nb
+i suivant
+renvoyer somme
+Fin Fonction
+
+Ecrire "Le résultat est :" ,somme, "."
+
+fin 
+
+Corrigé // Var somme, resultat,n1,n2,n3,n4,n5 en entier
+Fonction somme (A,B,C,D,E en entier)
+renvoyer A+B+C+D+E 
+
+Début
+
+Ecrire "5 nombres"
+Lire n1,n2,n3,n4,n5
+
+Resultat = somme (n1,n2,n3,n4,n5)
+
+Ecrire "Le resultat est :",resultat
+
+Fin
+
+Exercice 11.2
+
+
+Variables voyelles Phrase en chaine de caracteres
+nbvoyelles, nblettres,i en entier
+Fonction voyelles(msg en caracteres)
+
+Debut
+
+Fonction voyelles(msg)
+Ecrire msg
+Lire msg
+voyelles = "aeiouy"
+nblettres = len(phrase)
+nbvoyelles=0
+Pour i = 1 a nblettres
+Si trouve(voyelles,mid(phrase,i,1)) <> 0
+Alors nbvoyelles = nbvoyelles +1
+Finsi
+i suivant
+renvoyer nbvoyelles
+fin fonction
+
+Ecrire "le nombre de voyelles est" ,nbvoyelles, "."
+
+Fin
+
+Exercice 11.3
+
+Réécrivez la fonction Trouve, vue précédemment, à l’aide des fonctions Mid
+ et Len (comme quoi, Trouve, à la différence de Mid et Len, n’est pas une 
+	fonction indispensable dans un langage).
+
+Debut
+
+Fonction Trouver(a,b en caractères)
+Variable Max,i en numérique
+
+
+Ecrire " Entrez une phrase"
+Lire phrase1
+Ecrire "quel(s) caractères souhaitez vous trouver ?"
+Lire phrase 2
+a =phrase1
+b = phrase2
+Max = len(a)-len(b)
+si Max > 0 alors
+pour i = 1 a len(a)-len(b)
+si mid(phrase1,i,len(b)) = b alors
+renvoyer i
+sinon renvoyer i=0
+finsi
+isuivant
+Fin fonction
+
+Fin
